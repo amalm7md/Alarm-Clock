@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background: url(pexels-janko-ferlic-590493.jpg);
+  background-size: cover;
+}
+
+#clock-full-body {
+  width: 450px;
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(99, 99, 99);
+}
+
+#clock {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+#set-alarm-container {
+  border: 2px solid white;
+  margin-left: 25px;
+  width: 400px;
+  height: 65px;
+}
+
+#set-alarm-container input,
+select {
+  background-color: #f8f9d2;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 55px;
+  height: 35px;
+  margin-top: 15px;
+}
+
+#add-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: bold;
+  margin-left: 20px;
+  color: white;
+  border-radius: 10px;
+}
+/* set alarm button n hover
+ */
+#add-btn:hover {
+  background-color: white;
+  color: rgb(13, 65, 11);
+  font-weight: bold;
+}
+ul{
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+}
+#alarm-list {
+  height: 270px;
+  width: 330px;
+  overflow-y: scroll;
+  list-style: square;
+}
+
+#alarm-list li {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.delete-btn {
+  float: right;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.delete-btn:hover {
+  color: red;
+}
+
+.back {
+  background-color: blueviolet;
+}
+
+/* margin left 25% */
+
+.ml-25p {
+  margin-left: 25%;
+}
+
+/* display flex and justify-content center */
+
+.flex-jf-c {
+  display: flex;
+  justify-content: center;
+}
