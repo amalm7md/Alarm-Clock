@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/a0ced3cb41.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="clock-body">
+
+
+    <div id="container" class="flex-jf-c">
+      <div id="clock-full-body" class="back">
+
+        <div id="time-box">
+          <p id="clock"></p>
+        </div>
+        <div id="set-alarm-container">
+          <div id="set-alarm" style="margin-left: 25px;">
+            <input type="number" min="1"  max="12" name="set-hours" id="set-hours"
+              placeholder="HH" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;">
+            <input type="number" min="0" max="59" name="set-minutes" id="set-minutes"  placeholder="MM"
+              onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;">
+            <input type="number" min="0" max="59" name="set-seconds" id="set-seconds" class="alarm-input" placeholder="SS"
+              onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;">
+            <select name="am-pm" id="am-pm" style="width: 50px; height:35px;">
+              <option data-value="AM">AM</option>
+              <option data-value="PM">PM</option>
+            </select>
+            <button type="submit" id="add-btn">Set Alarm</button>
+          </div>
+
+        </div>
+        <div id="alarm-history" style="margin-top: 10px; margin-left: 30px;">
+          <h2><p> Alarms</p></h2>
+          <ul id="alarm-list"></ul>
+        </div>
+
+      </div>
+
+    </div>
+ 
+
+  </div>
+
+  
+
+  
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
